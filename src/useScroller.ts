@@ -3,10 +3,18 @@
  *
  * {options} expects: { x: number, y: number, isSmooth: boolean }.
  */
-export function useScroller({ x, y, isSmooth = false }) {
-  // Check if `window` exists.
-  // This function can run in NodeJS which doesn't have a global `window` variable.
-  // NodeJS is required for unit testing.
+ export function useScroller({
+  x,
+  y,
+  isSmooth = false,
+}: {
+  x: number;
+  y: number;
+  isSmooth?: boolean;
+}) {
+  // Check if `window` exists incase this
+  // hook is ran in NodeJS which doesn't have
+  // a global `window` variable.
   if (!window) {
     return;
   }
