@@ -19,7 +19,6 @@ export function useScroller({
     return;
   }
 
-  // eslint-disable-next-line
   return function scroller() {
     // Modern browsers provide a scrolling interface!
     window.scrollTo({
