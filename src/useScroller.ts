@@ -3,7 +3,7 @@
  *
  * {options} expects: { x: number, y: number, isSmooth: boolean }.
  */
- export function useScroller({
+export function useScroller({
   x,
   y,
   isSmooth = false,
@@ -19,6 +19,7 @@
     return;
   }
 
+  // eslint-disable-next-line
   return function scroller() {
     // Modern browsers provide a scrolling interface!
     window.scrollTo({
