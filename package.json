@@ -22,6 +22,7 @@
   },
   "dependencies": {},
   "scripts": {
+    "build": "esbuild ./src/index.js --bundle --format=esm --outdir=dist",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   }
