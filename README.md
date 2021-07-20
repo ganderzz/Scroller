@@ -1,3 +1,3 @@
 # Scroller
 
-An easy-to-use scrolling library!@
+An easy-to-use scrolling library!
